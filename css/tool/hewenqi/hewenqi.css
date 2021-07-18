@@ -1,0 +1,34 @@
+/* line 1, ../../../sass/tool/hewenqi/hewenqi.scss */
+.hewenqi-wrap {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 7, ../../../sass/tool/hewenqi/hewenqi.scss */
+.hewenqi-wrap * {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 13, ../../../sass/tool/hewenqi/hewenqi.scss */
+.hewenqi-wrap li {
+  line-height: 60px;
+  border-bottom: 1px solid #fcfcfc;
+  position: relative;
+  padding: 0 12px;
+  color: #666;
+  background: #f2f2f2;
+}
+
+/* line 22, ../../../sass/tool/hewenqi/hewenqi.scss */
+.hewenqi-btn {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  text-align: center;
+  background: #ffcb20;
+  color: #fff;
+  width: 80px;
+}

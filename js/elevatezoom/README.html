@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+		<title>adidas Online Shop | adidas TW</title>
+
+		<!-- seo -->
+		<meta name="keywords"    content="網站關鍵字">
+		<meta name="description" content="網站敘述">
+		<meta name="author"      content="作者">
+
+		<!-- FB_og -->
+		<meta property="og:url"           content="分享網址" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="LINE" />
+		<meta property="og:description"   content="分想敘述" />
+		<meta property="og:image"         content="分享顯示圖" />
+
+		<!--Apple Icon-->
+		<link href="images/ios/apple-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+		<link href="images/ios/apple-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+		<link href="images/ios/apple-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+		<link href="images/ios/apple-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+
+		<!--Android Icon-->
+		<link href="images/android/icon-hires.png" rel="icon" sizes="192x192" />
+		<link href="images/android/icon-normal.png" rel="icon" sizes="128x128" />
+		
+		<!--Favicon-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- 主JQ -->
+		<script src="js/main/jquery-2.2.0.min.js"></script>
+		<script src="js/main/main.js"></script>
+
+		<!-- 延遲載入img & 一定要加class才有效果 -->
+		<script src="js/lazyload/jquery.lazyload.min.js"></script>
+		<script src="js/main/lazy.js"></script>
+
+		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css"> -->
+
+		
+		<!-- Bootstrap-->
+		<!-- <script src="js/bootstrap.js"></script> -->
+
+		<!-- banner -->
+		<!-- <script src="js/main/banner.js"></script> -->
+
+		<!-- 手機menu工具 -->
+		<!-- <link type="text/css" rel="stylesheet" href="css/mmenu/mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/mmenu/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/mmenu/jquery.mmenu.all.min.js"></script>
+		<script type="text/javascript" src="js/mmenu/mmenu.js"></script> -->
+
+		<!-- Font Awesome -->
+		<!-- <link rel="stylesheet" href="css/fontawesome/font-awesome.css"> -->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/tool/font/font-face.css">
+		<link rel="stylesheet" href="css/component/bootstarp-normalize-3.1.css">
+		<link rel="stylesheet" href="css/component/slick.css">
+		
+		<link rel="stylesheet" href="css/component/header-classic.css">
+		<link rel="stylesheet" href="css/component/index-new.css">
+		<link rel="stylesheet" href="css/component/banner-classic.css">
+		<link rel="stylesheet" href="css/component/banner-grid.css">
+		<link rel="stylesheet" href="css/component/gallery-recommend.css">
+		<link rel="stylesheet" href="css/component/footer-classic.css">
+		<link rel="stylesheet" href="css/component/feedback-classic.css">
+		<link rel="stylesheet" href="css/component/popup.css">
+		<link rel="stylesheet" href="css/component/top-banner.css">
+
+		<!-- <link rel="stylesheet" href="css/index.css"> -->
+		<!-- popup js -->
+		<script src="js/main/popup.js"></script>
+		<!-- slick工具 -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/external/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/external/slick/slick-theme.css"/> -->
+		<script type="text/javascript" src="js/slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.banner-slick').slick({
+					dots: true,
+					autoplay: true,
+					autoplaySpeed: 3000
+				});
+				$('.product-slick-list-box, .product-slick-view-box').slick({
+					dots: true,
+					lazyLoad: 'ondemand',
+					infinite: false,
+					dots: true,
+					slidesToShow: 4,
+					slidesToScroll: 4,
+					responsive: [
+						{
+							breakpoint: 1024,
+							lazyLoad: 'ondemand',
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 3
+							}
+						},
+						{
+							breakpoint: 480,
+							lazyLoad: 'ondemand',
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						}
+					]
+				});
+				// $('.product-color-list-for-1').slick({
+				// 	slidesToShow: 1,
+				// 	slidesToScroll: 1,
+				// 	arrows: false,
+				// 	fade: true,
+				// 	asNavFor: '.product-color-list-nav-1'
+				// });
+				// $('.product-color-list-nav-1').slick({
+				// 	slidesToShow: 3,
+				// 	slidesToScroll: 1,
+				// 	dots: false,
+				// 	// centerMode: true,
+				// 	// focusOnSelect: true,
+				// 	asNavFor: '.product-color-list-for-1'
+				// });
+
+
+				//style2
+				$('.product-img-show-box').slick({
+					lazyLoad: 'ondemand',
+					arrows: false,
+					fade: false
+				});
+
+				$('.box-new-bar').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 4000,
+					arrows: false,
+					// lazyLoad: 'ondemand',
+					// lazyLoad: 'progressive',
+					responsive: [
+						{
+							breakpoint: 1024,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 970,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 600,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+		</script>
+		<!-- IE8支援 HTML5 -->
+		<!--[if lt IE 9]>
+			<script src="js/IE8/html5shiv.js"></script>
+			<script src="js/IE8/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<!--首頁最新消息顯示與否，要再body上加  class="index-news"  -->
+	<!-- popup-top-banner -->
+	<!-- top-banner -->
+	<body class="index-news">
+		<h1 id="jquery-zoom-pluginhttpwwwelevatewebcoukimage-zoom"><a href="http://www.elevateweb.co.uk/image-zoom/">jQuery Zoom Plugin</a></h1>
+
+<p>elevateZoom - A jQuery image zoom plugin</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Include jQuery and the plugin on a page. Include your images and initialise the plugin.</p>
+
+<p>```html
+<img id="zoom_01" src="images/small/image1.png" data-zoom-image="images/large/image1.jpg" /></p>
+
+<script>
+    $('#zoom_01').elevateZoom();
+</script>
+
+<p>```</p>
+
+<p>For more information on how to setup and customise, <a href="http://www.elevateweb.co.uk/image-zoom/examples">check the examples</a>.</p>
+
+<h2 id="license">License</h2>
+<p>Copyright (c) 2012 Andrew Eades
+Dual licensed under the GPL and MIT licenses.</p>
+
+	</body>
+</html>
